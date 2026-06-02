@@ -353,7 +353,7 @@ Genera un diagnóstico financiero personalizado en JSON con exactamente esta est
       console.error(err);
       document.getElementById('loading-section').innerHTML = `
         <p style="font-size:16px; color:var(--muted); text-align:center;">
-          Algo salió mal al generar tu diagnóstico.<br>
+          Error: ${err.message}<br><br>
           Escríbenos al grupo de WhatsApp y te ayudamos.
         </p>`;
     }
