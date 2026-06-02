@@ -313,7 +313,7 @@ Genera un diagnóstico financiero personalizado en JSON con exactamente esta est
 }`;
 
     try {
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
+      const res = await fetch('https://diagnostico-club365.bold-shadow-6e9b.workers.dev', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
